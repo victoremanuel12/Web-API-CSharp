@@ -1,0 +1,50 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>WebAPIMocoratti</name>
+    </assembly>
+    <members>
+        <member name="M:WebAPIMocoratti.Controllers.CategoriasController.Get(System.Int32)">
+            <summary>
+            Obetem a categoria pelo ID
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:WebAPIMocoratti.Migrations.MigrationInicial">
+            <inheritdoc />
+        </member>
+        <member name="M:WebAPIMocoratti.Migrations.MigrationInicial.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:WebAPIMocoratti.Migrations.MigrationInicial.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:WebAPIMocoratti.Migrations.MigrationInicial.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="T:WebAPIMocoratti.Migrations.MigrationComDataAnottations">
+            <inheritdoc />
+        </member>
+        <member name="M:WebAPIMocoratti.Migrations.MigrationComDataAnottations.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:WebAPIMocoratti.Migrations.MigrationComDataAnottations.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:WebAPIMocoratti.Migrations.MigrationComDataAnottations.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="T:WebAPIMocoratti.Migrations.identity">
+            <inheritdoc />
+        </member>
+        <member name="M:WebAPIMocoratti.Migrations.identity.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:WebAPIMocoratti.Migrations.identity.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:WebAPIMocoratti.Migrations.identity.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <inheritdoc />
+        </member>
+    </members>
+</doc>
