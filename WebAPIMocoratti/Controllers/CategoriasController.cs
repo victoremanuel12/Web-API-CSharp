@@ -1,5 +1,4 @@
 ﻿using AutoMapper;
-using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Newtonsoft.Json;
@@ -121,7 +120,7 @@ namespace WebAPIMocoratti.Controllers
 
         public async Task<ActionResult> Post([FromBody] Categoria categoria)
         {
-            if(categoria is null)
+            if (categoria is null)
             {
                 return BadRequest("Não é possível adicionar uma categoria nula");
             }
@@ -132,7 +131,7 @@ namespace WebAPIMocoratti.Controllers
 
         [HttpPut("{id:int}")]
         [ApiConventionMethod(typeof(DefaultApiConventions), nameof(DefaultApiConventions.Put))]
-        public  ActionResult Put(int id, [FromBody] CategoriaDTO categoriaDTO)
+        public ActionResult Put(int id, [FromBody] CategoriaDTO categoriaDTO)
         {
             if (id != categoriaDTO.Id) return BadRequest("Id da categoria alterada não é o mesmo da categoria encontrada.");
             Categoria categoria = _mapper.Map<Categoria>(categoriaDTO);

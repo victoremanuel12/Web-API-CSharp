@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "hC6rMz7mVeWzocf5Gw7O4ntRuovc1CrLgsWeu+HX4xUb2FAvzIs1rabWhEsQrUR0bqnfnW61KmlEik0UeDKFHw==",
+  "dgSpecHash": "32iQou2hjzdiMUYNLnVq1ew9CXQa0qETaqrImxdtSabt3lYj48hWDdGP1ZEluupeDROuNFTQhqs3+if9Gkqibg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\victor.silva\\Documents\\Estudos\\Udemy\\WebAPIMocoratti\\WebAPIMocoratti\\WebAPIMocoratti.csproj",
+  "projectFilePath": "C:\\Users\\victor.silva\\Documents\\Estudos\\Udemy\\Cursos-Udemy-CSharp\\WebAPIMocoratti\\WebAPIMocoratti\\WebAPIMocoratti.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\victor.silva\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
     "C:\\Users\\victor.silva\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.1\\automapper.extensions.microsoft.dependencyinjection.12.0.1.nupkg.sha512",

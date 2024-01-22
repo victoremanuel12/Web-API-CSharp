@@ -24,7 +24,6 @@ namespace WebAPIMocoratti.Repository
 
         public  IQueryable<T> Get()
         {
-            //AsNoTracking() desabilita o rastreamento de objetos
             return  _context.Set<T>().AsNoTracking();
         }
 

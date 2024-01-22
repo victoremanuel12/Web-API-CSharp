@@ -12188,11 +12188,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\victor.silva\\Documents\\Estudos\\Udemy\\WebAPIMocoratti\\WebAPIMocoratti\\WebAPIMocoratti.csproj",
+      "projectUniqueName": "C:\\Users\\victor.silva\\Documents\\Estudos\\Udemy\\Cursos-Udemy-CSharp\\WebAPIMocoratti\\WebAPIMocoratti\\WebAPIMocoratti.csproj",
       "projectName": "WebAPIMocoratti",
-      "projectPath": "C:\\Users\\victor.silva\\Documents\\Estudos\\Udemy\\WebAPIMocoratti\\WebAPIMocoratti\\WebAPIMocoratti.csproj",
+      "projectPath": "C:\\Users\\victor.silva\\Documents\\Estudos\\Udemy\\Cursos-Udemy-CSharp\\WebAPIMocoratti\\WebAPIMocoratti\\WebAPIMocoratti.csproj",
       "packagesPath": "C:\\Users\\victor.silva\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\victor.silva\\Documents\\Estudos\\Udemy\\WebAPIMocoratti\\WebAPIMocoratti\\obj\\",
+      "outputPath": "C:\\Users\\victor.silva\\Documents\\Estudos\\Udemy\\Cursos-Udemy-CSharp\\WebAPIMocoratti\\WebAPIMocoratti\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
