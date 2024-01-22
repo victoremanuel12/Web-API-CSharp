@@ -1,4 +1,5 @@
 ﻿using AutoMapper;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Newtonsoft.Json;
@@ -9,36 +10,25 @@ using WebAPIMocoratti.Repository.Interfaces;
 
 namespace WebAPIMocoratti.Controllers
 {
-    //[Authorize(AuthenticationSchemes ="Bearer")]
+    [Authorize(AuthenticationSchemes ="Bearer")]
     [Produces("application/json")]
     [Route("api/[controller]")]
     [ApiController]
     public class CategoriasController : ControllerBase
     {
-        //private readonly IConfiguration _configuration;
-        //private readonly ILogger _logger;
         private readonly IUnitOfWork _uow;
         private readonly IMapper _mapper;
 
 
         public CategoriasController(IUnitOfWork uof, IMapper mapper)
         {
-            //_configuration = config;
+           
             _uow = uof;
             _mapper = mapper;
 
 
         }
-        //[HttpGet("Autor")]
-        //public string Autor()
-        //{
-        //    return _configuration["autor"];
-        //}
-        //[HttpGet("ConnectionString")]
-        //public string ConnectionStrings()
-        //{
-        //    return _configuration["ConnectionStrings:DefaultConnection"];
-        //}
+       
 
         [HttpGet]
         public async Task<ActionResult<IEnumerable<CategoriaDTO>>> Get([FromQuery] CategoriasParameters categoriasParameters)
@@ -61,7 +51,7 @@ namespace WebAPIMocoratti.Controllers
                     categorias.HasPrevius
                 };
 
-                if (Response != null) // Check if Response is not null
+                if (Response != null) 
                 {
                     Response.Headers.Add("X-Pagination", JsonConvert.SerializeObject(metadata));
                 }
@@ -75,10 +65,7 @@ namespace WebAPIMocoratti.Controllers
             }
 
         }
-        /// <summary>
-        /// Obetem a categoria pelo ID
-        /// </summary>
-        /// <returns></returns>
+    
         [ProducesResponseType(typeof(CategoriaDTO), StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
         [ProducesResponseType(StatusCodes.Status401Unauthorized)]
@@ -94,7 +81,7 @@ namespace WebAPIMocoratti.Controllers
             var categoriaDto = _mapper.Map<CategoriaDTO>(categoria);
             return categoriaDto;
         }
-        // Ocorreu um erro de referencia ciclica
+        
         [HttpGet("produtosByCategory")]
         public async Task<ActionResult<IEnumerable<CategoriaDTO>>> GetProdutosByCategory()
         {
@@ -102,12 +89,12 @@ namespace WebAPIMocoratti.Controllers
             {
                 List<Categoria> produtosPorCategoria = await _uow.CategoriaRepository.Get().Include(c => c.Produtos).ToListAsync();
                 List<CategoriaDTO> categoriaDTO = _mapper.Map<List<CategoriaDTO>>(produtosPorCategoria);
-                //throw new Exception();
+                
                 return categoriaDTO;
             }
             catch (Exception)
             {
-                //return BadRequest();
+                
                 return StatusCode(StatusCodes.Status500InternalServerError, "Ocorreu um erro ao realizar sua solicitação");
             }
         }
